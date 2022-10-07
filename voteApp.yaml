@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vote
+  labels:
+    app: vote
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vote
+  template:
+    metadata:
+      labels:
+        app: vote
+    spec:
+      containers:
+      - name: vote
+        image: mcr.microsoft.com/azuredocs/azure-vote-front:v1
+        env:
+          - name: STRESS_SECS
+            value: "2"
+          - name: REDIS
+            value: "redis"
+          - name: REDIS_PWD
+            valueFrom:
+              secretKeyRef:
+                name: redissecret
+                key: password
+        ports:
+          - containerPort: 80
+
