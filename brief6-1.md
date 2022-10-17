@@ -51,7 +51,9 @@ Une fois le cluster déployé, il faut le connecter avec l'environnement de trav
 
 ## Application gateway avec AKS
 - création avec az cli d'un cluster AKS avec l'add on AGIC: 
-                az aks create -g ressourcegroup -n clusteraks --ssh-key-value ./.ssh/id_rsa.pub --node-count 4 --enable-managed-identity -a ingress-appgw --appgw-name Applicationgateway --appgw-subnet-cidr "10.225.0.0/16"
+
+                az aks create -g ressourcegroup -n clusteraks --ssh-key-value ./.ssh/id_rsa.pub --node-count 4 --enable-managed-identity -a ingress-                     appgw --appgw-name Applicationgateway --appgw-subnet-cidr "10.225.0.0/16"
+                
 - Je crée un manifest créant une ressource ingress qui route les arrivées sur l'ip publique de la gateway vers l'app.
 
 ---
