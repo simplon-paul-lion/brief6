@@ -9,7 +9,7 @@ Déployement d'une application de vote chien/chat avec une base de données Redi
 Le service AKS d'azure permet de déployer l'ensemble des éléments permettant l'administration des nodeset des pods gérés avec kubernetes :
 - un load balancer
 -  un node qui contient :
-        - un pod avec l'application
-        - un pod avec redis.
+      - un pod avec l'application
+      - un pod avec redis.
     
 
