@@ -1,17 +1,17 @@
 ---
 description: View the slide with "Slide Mode".
 slideOptions:
-    theme: black
+    theme: blue
     transition: 'concave'
     backgroundTransition: 'convex'
     transitionSpeed: 'default'
     parallaxBackgroundImage: 'https://github.com/simplon-paul-lion/brief_6/fond.jpg'
 ---
-  <!-- .slide: data-background="https://cncf-branding.netlify.app/img/projects/kubernetes/stacked/black/kubernetes-stacked-black.png" data-background-size="1500px" -->
-# Brief 6: executive summary
-- [github du brief](https://github.com/simplon-paul-lion/brief_6)
-- [résultat](http://vote.simplon-lion.space)
-- [présentation](https://hackmd.io/p/pxfhrvbSSHORAlPZGTul7Q)
+  <!-- .slide: data-background="https://cncf-branding.netlify.app/img/projects/kubernetes/stacked/blue/kubernetes-stacked-blue.png" data-background-size="1500px" -->
+# executive summary brief 6
+[github du brief](https://github.com/simplon-paul-lion/brief_6)
+[résultat](https://vote.simplon-lion.space)
+[présentation](https://hackmd.io/p/pxfhrvbSSHORAlPZGTul7Q)
 
 ---
 
@@ -36,20 +36,17 @@ Kubernetes fonctionne sur la base d'un état défini et un état réel. Le contr
 
 ---
 
-## le cluster K8s
 
-- 1 le controle plane
-- 
-    c'est le controle plane qui reçoit les instruction décrivant l'infrastructure désirée et qui met le cluster en conformité avec ce qui lui a été déclaré.
-    
+# le cluster K8s : le controle plane
+
+c'est le controle plane qui reçoit les instruction décrivant l'infrastructure désirée et qui met le cluster en conformité avec ce qui lui a été déclaré.
+
 ---
 
-## le cluster K8s
+# le cluster K8s : le data plane
     
-- 2 le data plane
-   
-   Il est composé des différents éléments qui ont été déclarés au controle plane.
-   Il peut compremdre : 
+le data plane est composé des différents éléments qui ont été déclarés au controle plane.
+   Il peut comprendre : 
        - les nodes qui vont héberger les pods, les kube proxy, etc ...
        - les pods hébergent les instances des conteneurs
        - les loadbalancers, les stockages persistants, les keyvaults, etc ...
@@ -57,7 +54,7 @@ Kubernetes fonctionne sur la base d'un état défini et un état réel. Le contr
 ---
 
 
-## Déployement du AKS de Azure
+## Déployement d'Azure AKS
 
     az aks create -g ressourcegroup -n clusteraks --ssh-key-value ./.ssh/id_rsa.pub --node-count 2
         
@@ -143,5 +140,3 @@ Une fois le cluster déployé, il faut le connecter avec l'environnement de trav
 - test de charge pour scale out et scale in
 
 ---
-
- 
