@@ -9,9 +9,9 @@ slideOptions:
 ---
   <!-- .slide: data-background="https://cncf-branding.netlify.app/img/projects/kubernetes/stacked/black/kubernetes-stacked-black.png" data-background-size="1500px" -->
 # Brief 6: executive summary
-[github du brief](https://github.com/simplon-paul-lion/brief_6)
-[résultat](http://vote.simplon-lion.space)
-[présentation](https://hackmd.io/p/pxfhrvbSSHORAlPZGTul7Q)
+- [github du brief](https://github.com/simplon-paul-lion/brief_6)
+- [résultat](http://vote.simplon-lion.space)
+- [présentation](https://hackmd.io/p/pxfhrvbSSHORAlPZGTul7Q)
 
 ---
 
