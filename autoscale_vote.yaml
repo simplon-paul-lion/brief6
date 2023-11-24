@@ -3,7 +3,6 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   name: autoscalevote
-  namespace : prod
 spec:
   maxReplicas: 8
   minReplicas: 1
