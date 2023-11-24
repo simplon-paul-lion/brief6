@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: redis
   labels:
-    app: redis
+    app: redislb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: redis
+      app: redislb
   template:
     metadata:
       labels:
-        app: redis
+        app: redislb
     spec:
       volumes: 
       - name: vol
