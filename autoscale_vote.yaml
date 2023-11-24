@@ -11,5 +11,10 @@ spec:
     kind: Deployment
     name: voteapp
   targetCPUUtilizationPercentage: 70
+   metrics:
+  - type: Resource
+    resource:
+      name: cpu
+      targetAverageUtilization: 70
 
 
