@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vote
+  name: voteapp
   labels:
-    app: vote
+    app: voteapplb
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vote
+      app: voteapplb
   template:
     metadata:
       labels:
-        app: vote
+        app: voteapplb
     spec:
       containers:
-      - name: vote
+      - name: voteapp
         image: mcr.microsoft.com/azuredocs/azure-vote-front:v1
         env:
           - name: STRESS_SECS
