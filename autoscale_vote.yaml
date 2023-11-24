@@ -16,5 +16,17 @@ spec:
     resource:
       name: cpu
       targetAverageUtilization: 70
+   status:
+   observedGeneration: 1
+   lastScaleTime: 
+   currentReplicas: 1
+   desiredReplicas: 1
+   currentMetrics:
+  - type: Resource
+    resource:
+      name: cpu
+      current:
+        averageUtilization: 0
+        averageValue: 0
 
 
